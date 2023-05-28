@@ -39,6 +39,7 @@ const Todo = ({ todo }) => {
           value={text}
           className="edit-todo"
           onChange={(e) => setText(e.target.value)}
+          maxLength={20}
         />
       </form>
 

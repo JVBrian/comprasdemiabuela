@@ -36,12 +36,12 @@ export const Todos = () => {
 
   return (
     <article>
-      <div>
+      <div className="list__button">
         <Tabs currentTab={currentTab} />
 
         {todos.some((todo) => todo.done) ? (
           <button onClick={removeDoneTodos} className="button clear">
-            Remover todos los comprados
+            Remover seleccionados
           </button>
         ) : null}
       </div>

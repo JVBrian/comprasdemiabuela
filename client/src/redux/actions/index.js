@@ -17,7 +17,7 @@ export const addNewTodo = (data) => async (dispatch) => {
 
     dispatch({ type: ADDNEW_TODO, payload: res.data });
   } catch (error) {
-    console.log("Error while calling addNewTodo API ", error.message);
+    console.log("Error al llamar a la API addNewTodo ", error.message);
   }
 };
 
@@ -27,7 +27,7 @@ export const getAllTodos = () => async (dispatch) => {
 
     dispatch({ type: GETALL_TODO, payload: res.data });
   } catch (error) {
-    console.log("Error while calling getAllTodos API ", error.message);
+    console.log("Error al llamar a la API getAllTodos ", error.message);
   }
 };
 
@@ -37,7 +37,7 @@ export const toggleTodo = (id) => async (dispatch) => {
 
     dispatch({ type: TOGGLE_TODO, payload: res.data });
   } catch (error) {
-    console.log("Error while calling getAllTodos API ", error.message);
+    console.log("Error al llamar a la API getAllTodos", error.message);
   }
 };
 
@@ -47,7 +47,7 @@ export const updateTodo = (id, data) => async (dispatch) => {
 
     dispatch({ type: UPDATE_TODO, payload: res.data });
   } catch (error) {
-    console.log("Error while calling updateTodo API ", error.message);
+    console.log("Error al llamar a la API de updateTodo ", error.message);
   }
 };
 

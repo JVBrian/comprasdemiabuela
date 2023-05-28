@@ -27,6 +27,7 @@ const TodoForm = () => {
         className="input"
         onChange={onInputChange}
         value={text}
+        maxLength={20}
       />
     </form>
   );
